@@ -10,7 +10,11 @@ import java.util.ArrayList;
 public class EnemyPlane {
     private int x;
     private int y;
+    private int dx;
+    private int dy;
+
     private Image image;
+
     private boolean shootEnableEnemy;
     ArrayList<EnemyBullet> enemyBullets;
 
@@ -22,7 +26,16 @@ public class EnemyPlane {
 
         enemyBullets = new ArrayList<>();
     }
-
+    int cdTime;
+    public void setShootEnableEnemy(){
+        if(shootEnableEnemy){
+            EnemyBullet enemyBullet = null;
+            enemyBullet = new EnemyBullet(x,y,loadImage("res/enemy_bullet.png"));
+            enemyBullets.add(enemyBullet);
+            shootEnableEnemy = false;
+            cdTime = 10;
+        }
+    }
     public int getX() {
         return x;
     }
@@ -52,16 +65,12 @@ public class EnemyPlane {
         for(EnemyBullet enemyBullet : enemyBullets){
             enemyBullet.draw(graphics);
         }
-        setShootEnableEnemy();
     }
 
     public void update(){
-        this.y ++;
-        if(this.y > 100){
-            this.x += 3;
-        }
+        this.y += 5;
         for(EnemyBullet enemyBullet : enemyBullets){
-            enemyBullet.update();
+            enemyBullets.add(enemyBullet);
         }
         if(!shootEnableEnemy){
             cdTime --;
@@ -70,18 +79,6 @@ public class EnemyPlane {
             }
         }
     }
-
-    int cdTime;
-    public void setShootEnableEnemy(){
-        if(shootEnableEnemy){
-            EnemyBullet enemyBullet = null;
-            enemyBullet = new EnemyBullet(x,y,loadImage("res/enemy_bullet.png"));
-            enemyBullets.add(enemyBullet);
-            shootEnableEnemy = false;
-            cdTime = 30;
-        }
-    }
-
     Image loadImage(String path){
         try {
             return ImageIO.read(new File(path));

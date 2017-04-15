@@ -9,8 +9,8 @@ public class EnemyBullet {
     private Image image;
 
     public EnemyBullet(int x, int y, Image image) {
-        this.x = x - 3;
-        this.y = y + 10;
+        this.x = x;
+        this.y = y;
         this.image = image;
     }
 
@@ -31,6 +31,6 @@ public class EnemyBullet {
     }
 
     public void update(){
-        this.y += 3;
+        this.y += 10;
     }
 }

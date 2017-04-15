@@ -1,3 +1,6 @@
+import enemies.EnemyController;
+import utils.Utils;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -7,7 +10,6 @@ import java.awt.event.WindowListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * Created by 123 on 09/04/2017.
@@ -24,28 +26,17 @@ public class GameWindow extends Frame {
     boolean isLeftPressed;
     boolean isRightPressed;
     boolean isSpacePressed;
-    boolean CreatEnemy;
 
-    Player player;
-    EnemyPlane enemyPlane;
-    ArrayList<Integer> turn1;
+    PlayerController playerController;
+    EnemyController enemyController, enemyController1;
 
     public GameWindow() {
         setVisible(true);
         setSize(800, 600);
         setTitle("Game 1945");
 
-        turn1 = new ArrayList<>();
-        turn1.add(0,100);
-        turn1.add(1,300);
-        turn1.add(2,500);
-        this.CreatEnemy = true;
-
-        player = new Player(400 - 25,600 - 70, Utils.loadImage("res/plane3.png"));
-        if(CreatEnemy){
-
-        }
-        enemyPlane = new EnemyPlane(turn1.get(0),0, Utils.loadImage("res/enemy-green-3.png"));
+        playerController = new PlayerController(400 - 25,600 - 70, Utils.loadImage("res/plane3.png"));
+        enemyController = new EnemyController(400,0, Utils.loadImage("res/enemy-green-3.png"));
 
         backBufferImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_ARGB);
         backBufferGraphic = backBufferImage.getGraphics();
@@ -156,10 +147,9 @@ public class GameWindow extends Frame {
                         e.printStackTrace();
                     }
 
-                    player.processInput(isUpPressed, isDownPressed, isLeftPressed, isRightPressed, isSpacePressed);
-                    player.update();
-
-                    enemyPlane.update();
+                    playerController.processInput(isUpPressed, isDownPressed, isLeftPressed, isRightPressed, isSpacePressed);
+                    playerController.update();
+                    enemyController.update();
                     repaint();
                 }
             }
@@ -171,8 +161,8 @@ public class GameWindow extends Frame {
     @Override
     public void update(Graphics g) {
         backBufferGraphic.drawImage(backgroundImage, 0, 0, 800, 600, null);
-        player.draw(backBufferGraphic);
-        enemyPlane.draw(backBufferGraphic);
+        playerController.draw(backBufferGraphic);
+        enemyController.draw(backBufferGraphic);
 
         g.drawImage(backBufferImage, 0, 0, null);
     }

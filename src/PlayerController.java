@@ -1,3 +1,6 @@
+import models.GameRect;
+import views.ImageRenderer;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -7,41 +10,34 @@ import java.util.ArrayList;
 /**
  * Created by 123 on 13/04/2017.
  */
-public class Player {
-    private int x;
-    private int y;
-    private Image image;
+public class PlayerController {
+    private GameRect gameRect;
+    private ImageRenderer imageRenderer;
+    int dx = 0;
+    int dy = 0;
+
     private boolean shootEnable;
     ArrayList<PlayerBullet> playerBullets;
 
-    private int dx;
-    private int dy;
 
-    public Player(int x, int y, Image image) {
-        this.x = x;
-        this.y = y;
-        this.image = image;
-        this.dx = 0;
-        this.dy = 0;
+    public PlayerController(int x, int y, Image image) {
+        this.imageRenderer = new ImageRenderer(image);
+
+        gameRect = new GameRect(x,y,70,50);
+
         this.shootEnable = true;
 
         playerBullets = new ArrayList<>();
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public Image getImage() {
-        return image;
+    public GameRect getGameRect() {
+        return gameRect;
     }
 
     public void draw(Graphics graphics) {
-        graphics.drawImage(image, x, y , null);
+       imageRenderer.render(graphics, gameRect);
+
+
         for (PlayerBullet playerBullet : playerBullets) {
             playerBullet.draw(graphics);
         }
@@ -69,10 +65,10 @@ public class Player {
         if (isSpacePressed) {
             if (shootEnable) {
                 PlayerBullet playerBullet = null;
-                playerBullet = new PlayerBullet(x , y, loadImage("res/bullet.png"));
+                playerBullet = new PlayerBullet(gameRect.getX() , gameRect.getY(), loadImage("res/bullet.png"));
                 playerBullets.add(playerBullet);
                 shootEnable = false;
-                coolDownTime = 5;
+                coolDownTime = 10;
             }
         }
     }
@@ -92,8 +88,9 @@ public class Player {
         for(PlayerBullet playerBullet : playerBullets){
             playerBullet.update();
         }
-        this.x += dx;
-        this.y += dy;
+
+        gameRect.move(dx,dy);
+
         if(!shootEnable){
             coolDownTime --;
             if (coolDownTime <= 0){
