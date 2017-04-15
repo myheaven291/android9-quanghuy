@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5325654a-4262-4a99-96e6-ada4bf803796" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/enemies/EnemyController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/GameRect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/ImageRenderer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/Utils.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Player.java" afterPath="$PROJECT_DIR$/src/PlayerController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utils.java" afterPath="$PROJECT_DIR$/src/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/EnemyBullet.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/EnemyBullet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/EnemyPlane.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/EnemyPlane.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/EnemyPlane.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/PlayerBullet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/PlayerController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/EnemyBullet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/EnemyPlane.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PlayerBullet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PlayerController.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EnemyBullet.java" afterPath="$PROJECT_DIR$/src/EnemyBullet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EnemyPlane.java" afterPath="$PROJECT_DIR$/src/EnemyPlane.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/enemies/EnemyController.java" afterPath="$PROJECT_DIR$/src/enemies/EnemyController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,15 +24,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EnemyController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EnemyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enemies/EnemyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="833">
+              <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,26 +39,48 @@
       <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="38" column="93" lean-forward="false" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+            <state relative-caret-position="476">
+              <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/player/PlayerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
-                <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-                <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-                <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-                <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-                <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-                <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-                <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-                <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#draw#0;class#PlayerController#0" expanded="false" />
+                <element signature="method#processInput#0;class#PlayerController#0" expanded="false" />
+                <element signature="method#loadImage#0;class#PlayerController#0" expanded="false" />
+                <element signature="method#update#0;class#PlayerController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnemyBullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/enemies/EnemyBullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding>
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameRect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/GameRect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,57 +92,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlayerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImageRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/ImageRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameRect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/GameRect.java">
+      <file leaf-file-name="PlayerBullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-              <folding>
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,18 +117,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerBullet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,16 +148,20 @@
         <option value="$PROJECT_DIR$/src/Plane.java" />
         <option value="$PROJECT_DIR$/src/Bullet.java" />
         <option value="$PROJECT_DIR$/src/EnemyBullet.java" />
-        <option value="$PROJECT_DIR$/src/PlayerBullet.java" />
-        <option value="$PROJECT_DIR$/src/EnemyPlane.java" />
         <option value="$PROJECT_DIR$/src/models/GameRect.java" />
         <option value="$PROJECT_DIR$/src/Views/ImageRenderer.java" />
-        <option value="$PROJECT_DIR$/src/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/views/ImageRenderer.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/PlayerController.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/EnemyPlane.java" />
+        <option value="$PROJECT_DIR$/src/PlayerBullet.java" />
+        <option value="$PROJECT_DIR$/src/enemies/EnemyBullet.java" />
+        <option value="$PROJECT_DIR$/src/models/toLeft.java" />
         <option value="$PROJECT_DIR$/src/enemies/EnemyController.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/player/PlayerController.java" />
+        <option value="$PROJECT_DIR$/src/player/PlayerBullet.java" />
+        <option value="$PROJECT_DIR$/src/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -199,10 +172,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1374" />
-    <option name="height" value="732" />
+    <option name="x" value="-8" />
+    <option name="width" value="1609" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -219,7 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,6 +269,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android9-quanghuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android9-quanghuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -320,8 +311,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -773,46 +763,79 @@
       <workItem from="1492242021973" duration="40000" />
       <workItem from="1492242219290" duration="5993000" />
       <workItem from="1492258823389" duration="15000" />
+      <workItem from="1492260477325" duration="4188000" />
+      <workItem from="1492264735389" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26093000" />
+    <option name="totallyTimeSpent" value="30338000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="1" />
+    <frame x="-8" y="0" width="1609" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23108108" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43606558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43513513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17130308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17137477" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23114754" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23108108" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43513513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17105263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -829,14 +852,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/models/GameRect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/enemies/EnemyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,24 +890,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="38" column="93" lean-forward="true" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -871,12 +899,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#draw#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#processInput#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#loadImage#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#update#0;class#PlayerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,10 +919,6 @@
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -899,24 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +939,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -947,38 +958,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
           <caret line="143" column="13" lean-forward="false" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
           <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#draw#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#processInput#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#loadImage#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#update#0;class#PlayerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -986,13 +984,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnemyPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnemyPlane.java" />
     <entry file="file://$PROJECT_DIR$/src/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1004,38 +996,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2320">
           <caret line="156" column="13" lean-forward="true" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1168">
           <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#draw#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#processInput#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#loadImage#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#update#0;class#PlayerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -1043,13 +1022,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnemyPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnemyPlane.java" />
     <entry file="file://$PROJECT_DIR$/src/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1057,17 +1030,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#draw#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#processInput#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#loadImage#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#update#0;class#PlayerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
@@ -1079,24 +1056,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2352">
           <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,24 +1071,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="160" column="49" lean-forward="false" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,24 +1086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
           <caret line="148" column="33" lean-forward="false" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,24 +1101,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="103" column="41" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="41" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1207,24 +1116,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
           <caret line="148" column="40" lean-forward="false" selection-start-line="148" selection-start-column="40" selection-end-line="148" selection-end-column="40" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,24 +1131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="134" column="33" lean-forward="true" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,31 +1149,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnemyBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/plane3.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnemyPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/enemy-green-1.png">
@@ -1306,50 +1159,49 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/java/util/ArrayList.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="131">
+          <caret line="712" column="0" lean-forward="false" selection-start-line="712" selection-start-column="0" selection-end-line="712" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnemyPlane.java" />
+    <entry file="file://$PROJECT_DIR$/src/models/toLeft.java" />
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/enemies/EnemyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="833">
+          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enemies/EnemyBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/GameRect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,49 +1210,42 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/views/ImageRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="38" column="93" lean-forward="false" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
-          <folding>
-            <marker date="1492248281908" expanded="true" signature="1240:2012" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1326:1342" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="1428:1447" ph=" { " />
-            <marker date="1492248281908" expanded="false" signature="1462:1476" ph=" }" />
-            <marker date="1492248281908" expanded="true" signature="1562:1578" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1667:1683" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1774:1790" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1879:1895" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="1986:2002" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2057:3765" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2126:2142" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="2213:3003" ph="{...}" />
-            <marker date="1492248281908" expanded="true" signature="3075:3755" ph="{...}" />
-            <marker date="1492248281908" expanded="false" signature="3972:4042" ph="run() → {" />
-            <marker date="1492248281908" expanded="false" signature="4541:4556" ph="}" />
-            <marker date="1492248281908" expanded="true" signature="4640:4873" ph="{...}" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enemies/EnemyController.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="306">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/player/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
+            <element signature="method#draw#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#processInput#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#loadImage#0;class#PlayerController#0" expanded="false" />
+            <element signature="method#update#0;class#PlayerController#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -1,8 +1,8 @@
 package enemies;
 
 import models.GameRect;
+import utils.Utils;
 import views.ImageRenderer;
-
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -12,27 +12,52 @@ import java.util.ArrayList;
 public class EnemyController {
     private ImageRenderer imageRenderer;
     private GameRect gameRect;
-    private boolean enemyshootEnable;
+    private boolean shootEnableEnemy;
+    int cdTime;
 
     ArrayList<EnemyController> enemyControllers;
+    ArrayList<EnemyBullet> enemyBullets;
 
-    public EnemyController(ImageRenderer imageRenderer, GameRect gameRect, Image image) {
-        this.imageRenderer = imageRenderer;
-        this.gameRect = gameRect;
-    }
 
     public EnemyController(int x, int y, Image image){
+        this.shootEnableEnemy = true;
         imageRenderer = new ImageRenderer(image);
 
         gameRect = new GameRect(x,y,image.getWidth(null),image.getHeight(null));
 
+        enemyBullets = new ArrayList<>();
     }
 
     public void draw(Graphics graphics){
         imageRenderer.render(graphics, gameRect);
+
+        for(EnemyBullet enemyBullet : enemyBullets){
+            enemyBullet.draw(graphics);
+        }
+        setShootEnableEnemy();
     }
 
+    public void setShootEnableEnemy() {
+        if (shootEnableEnemy) {
+            EnemyBullet enemyBullet = null;
+            enemyBullet = new EnemyBullet(gameRect.getX(), gameRect.getY(), Utils.loadImage("res/enemy_bullet.png"));
+            enemyBullets.add(enemyBullet);
+            shootEnableEnemy = false;
+            cdTime = 20;
+        }
+    }
     public void update(){
-        gameRect.move(0, 1);
+        gameRect.move(0,1);
+
+
+        for(EnemyBullet enemyBullet : enemyBullets){
+            enemyBullet.update();
+        }
+        if(!shootEnableEnemy){
+            cdTime --;
+            if (cdTime <= 0){
+                shootEnableEnemy = true;
+            }
+        }
     }
 }

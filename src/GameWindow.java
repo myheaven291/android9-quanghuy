@@ -1,4 +1,5 @@
 import enemies.EnemyController;
+import player.PlayerController;
 import utils.Utils;
 
 import javax.imageio.ImageIO;
@@ -28,7 +29,7 @@ public class GameWindow extends Frame {
     boolean isSpacePressed;
 
     PlayerController playerController;
-    EnemyController enemyController, enemyController1;
+    EnemyController enemyController;
 
     public GameWindow() {
         setVisible(true);
@@ -36,7 +37,11 @@ public class GameWindow extends Frame {
         setTitle("Game 1945");
 
         playerController = new PlayerController(400 - 25,600 - 70, Utils.loadImage("res/plane3.png"));
-        enemyController = new EnemyController(400,0, Utils.loadImage("res/enemy-green-3.png"));
+
+        //Can xem lai
+        for (int x = 0; x < 300; x+=100){
+            enemyController = new EnemyController(x,0, Utils.loadImage("res/enemy-green-3.png"));
+        }
 
         backBufferImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_ARGB);
         backBufferGraphic = backBufferImage.getGraphics();
@@ -148,6 +153,7 @@ public class GameWindow extends Frame {
                     }
 
                     playerController.processInput(isUpPressed, isDownPressed, isLeftPressed, isRightPressed, isSpacePressed);
+
                     playerController.update();
                     enemyController.update();
                     repaint();
