@@ -1,4 +1,7 @@
+package player;
+
 import models.GameRect;
+import utils.Utils;
 import views.ImageRenderer;
 
 import javax.imageio.ImageIO;
@@ -8,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * Created by 123 on 13/04/2017.
+ * Created by Huy on 4/15/2017.
  */
 public class PlayerController {
     private GameRect gameRect;
@@ -19,11 +22,10 @@ public class PlayerController {
     private boolean shootEnable;
     ArrayList<PlayerBullet> playerBullets;
 
-
     public PlayerController(int x, int y, Image image) {
         this.imageRenderer = new ImageRenderer(image);
 
-        gameRect = new GameRect(x,y,70,50);
+        gameRect = new GameRect(x,y,image.getWidth(null),image.getHeight(null));
 
         this.shootEnable = true;
 
@@ -65,7 +67,7 @@ public class PlayerController {
         if (isSpacePressed) {
             if (shootEnable) {
                 PlayerBullet playerBullet = null;
-                playerBullet = new PlayerBullet(gameRect.getX() , gameRect.getY(), loadImage("res/bullet.png"));
+                playerBullet = new PlayerBullet(gameRect.getX() + 28, gameRect.getY() - 15, Utils.loadImage("res/bullet.png"));
                 playerBullets.add(playerBullet);
                 shootEnable = false;
                 coolDownTime = 10;
@@ -74,15 +76,6 @@ public class PlayerController {
     }
 
     int coolDownTime;
-
-    Image loadImage(String path) {
-        try {
-            return ImageIO.read(new File(path));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 
     public void update(){
         for(PlayerBullet playerBullet : playerBullets){

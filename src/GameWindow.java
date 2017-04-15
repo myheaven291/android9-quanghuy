@@ -13,7 +13,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Huy on 4/15/2017.
+ * Created by 123 on 09/04/2017.
  */
 public class GameWindow extends Frame {
 
@@ -136,11 +136,7 @@ public class GameWindow extends Frame {
             }
         });
 
-        try {
-            backgroundImage = ImageIO.read(new File("res/background.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            backgroundImage = Utils.loadImage("res/background.png");
 
         Thread thread = new Thread(new Runnable() {
             @Override

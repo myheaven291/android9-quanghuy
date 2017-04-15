@@ -40,7 +40,7 @@ public class EnemyController {
     public void setShootEnableEnemy() {
         if (shootEnableEnemy) {
             EnemyBullet enemyBullet = null;
-            enemyBullet = new EnemyBullet(gameRect.getX(), gameRect.getY(), Utils.loadImage("res/enemy_bullet.png"));
+            enemyBullet = new EnemyBullet(gameRect.getX() - 2, gameRect.getY() + 10, Utils.loadImage("res/enemy_bullet.png"));
             enemyBullets.add(enemyBullet);
             shootEnableEnemy = false;
             cdTime = 20;
