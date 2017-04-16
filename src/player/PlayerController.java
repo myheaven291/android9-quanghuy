@@ -36,6 +36,7 @@ public class PlayerController {
         return gameRect;
     }
 
+
     public void draw(Graphics graphics) {
        imageRenderer.render(graphics, gameRect);
 

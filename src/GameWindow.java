@@ -25,7 +25,7 @@ public class GameWindow extends Frame {
 
     PlayerController playerController;
     ArrayList<EnemyController> enemyControllers;
-    BossControl bossControl;
+    UfoControl ufoControl;
 
     public GameWindow() {
         setVisible(true);
@@ -48,7 +48,7 @@ public class GameWindow extends Frame {
 
             enemyControllers.add(enemyController);
         }
-        bossControl = new BossControl(-150, 150, Utils.loadImage("res/ufo.png"));
+        ufoControl = new UfoControl(-150, 150, Utils.loadImage("res/ufo.png"));
 
         backBufferImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_ARGB);
         backBufferGraphic = backBufferImage.getGraphics();
@@ -155,9 +155,8 @@ public class GameWindow extends Frame {
                         e.printStackTrace();
                     }
                     playerController.processInput(isUpPressed, isDownPressed, isLeftPressed, isRightPressed, isSpacePressed);
-
                     playerController.update();
-                    bossControl.update();
+                    ufoControl.update();
 
                     for (EnemyController enemyController : enemyControllers) {
                         enemyController.update();
@@ -175,7 +174,7 @@ public class GameWindow extends Frame {
     public void update(Graphics g) {
         backBufferGraphic.drawImage(backgroundImage, 0, 0, 800, 600, null);
         playerController.draw(backBufferGraphic);
-        bossControl.draw(backBufferGraphic);
+        ufoControl.draw(backBufferGraphic);
 
         for (EnemyController enemyController : enemyControllers) {
             enemyController.draw(backBufferGraphic);
