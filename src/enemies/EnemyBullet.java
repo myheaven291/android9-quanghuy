@@ -24,7 +24,6 @@ public class EnemyBullet {
     public ImageRenderer getImageRenderer() {
         return imageRenderer;
     }
-
     public void setGameRect(GameRect gameRect) {
         this.gameRect = gameRect;
     }
@@ -38,6 +37,6 @@ public class EnemyBullet {
     }
 
     public void update(){
-        gameRect.move(0,5);
+        gameRect.move(0,2);
     }
 }

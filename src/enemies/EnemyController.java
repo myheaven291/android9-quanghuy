@@ -11,12 +11,14 @@ import java.util.ArrayList;
  */
 public class EnemyController {
     private ImageRenderer imageRenderer;
-    private GameRect gameRect;
+    private GameRect gameRect, gameRectUfo;
     private boolean shootEnableEnemy;
     int cdTime;
+    private MoveBehavior moveBehavior;
 
     ArrayList<EnemyController> enemyControllers;
     ArrayList<EnemyBullet> enemyBullets;
+    EnemyController ufo;
 
 
     public EnemyController(int x, int y, Image image){
@@ -40,15 +42,21 @@ public class EnemyController {
     public void setShootEnableEnemy() {
         if (shootEnableEnemy) {
             EnemyBullet enemyBullet = null;
-            enemyBullet = new EnemyBullet(gameRect.getX() - 2, gameRect.getY() + 10, Utils.loadImage("res/enemy_bullet.png"));
+            enemyBullet = new EnemyBullet(gameRect.getX() -2, gameRect.getY() + 13, Utils.loadImage("res/enemy_bullet.png"));
             enemyBullets.add(enemyBullet);
             shootEnableEnemy = false;
-            cdTime = 20;
+            cdTime = 100;
         }
     }
-    public void update(){
-        gameRect.move(0,1);
 
+    public void setMoveBehavior(MoveBehavior moveBehavior) {
+        this.moveBehavior = moveBehavior;
+    }
+
+    public void update(){
+        if(moveBehavior != null){
+            moveBehavior.move(gameRect);
+        }
 
         for(EnemyBullet enemyBullet : enemyBullets){
             enemyBullet.update();

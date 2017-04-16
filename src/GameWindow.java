@@ -1,16 +1,11 @@
-import enemies.EnemyController;
+import enemies.*;
 import player.PlayerController;
 import utils.Utils;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by 123 on 09/04/2017.
@@ -29,19 +24,31 @@ public class GameWindow extends Frame {
     boolean isSpacePressed;
 
     PlayerController playerController;
-    EnemyController enemyController;
+    ArrayList<EnemyController> enemyControllers;
+    BossControl bossControl;
 
     public GameWindow() {
         setVisible(true);
         setSize(800, 600);
         setTitle("Game 1945");
+        enemyControllers = new ArrayList<>();
 
-        playerController = new PlayerController(400 - 25,600 - 70, Utils.loadImage("res/plane3.png"));
+        playerController = new PlayerController(400 - 25, 600 - 70, Utils.loadImage("res/plane3.png"));
 
-        //Can xem lai
-        for (int x = 0; x < 300; x+=100){
-            enemyController = new EnemyController(x,0, Utils.loadImage("res/enemy-green-3.png"));
+        //Create Enemies
+        for (int x = 200; x < getWidth(); x += 200) {
+            EnemyController enemyController = new EnemyController(x, 0, Utils.loadImage("res/enemy-green-3.png"));
+            enemyController.setMoveBehavior(new MoveBehavior());
+
+            if (x == 400) {
+                enemyController.setMoveBehavior(new MoveBehavior());
+            } else if (x == 200) {
+                enemyController.setMoveBehavior(new ToLeftBehavior());
+            } else enemyController.setMoveBehavior(new ToRightBehavior());
+
+            enemyControllers.add(enemyController);
         }
+        bossControl = new BossControl(-150, 150, Utils.loadImage("res/ufo.png"));
 
         backBufferImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_ARGB);
         backBufferGraphic = backBufferImage.getGraphics();
@@ -136,7 +143,7 @@ public class GameWindow extends Frame {
             }
         });
 
-            backgroundImage = Utils.loadImage("res/background.png");
+        backgroundImage = Utils.loadImage("res/background.png");
 
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -147,11 +154,15 @@ public class GameWindow extends Frame {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-
                     playerController.processInput(isUpPressed, isDownPressed, isLeftPressed, isRightPressed, isSpacePressed);
 
                     playerController.update();
-                    enemyController.update();
+                    bossControl.update();
+
+                    for (EnemyController enemyController : enemyControllers) {
+                        enemyController.update();
+                    }
+
                     repaint();
                 }
             }
@@ -164,7 +175,11 @@ public class GameWindow extends Frame {
     public void update(Graphics g) {
         backBufferGraphic.drawImage(backgroundImage, 0, 0, 800, 600, null);
         playerController.draw(backBufferGraphic);
-        enemyController.draw(backBufferGraphic);
+        bossControl.draw(backBufferGraphic);
+
+        for (EnemyController enemyController : enemyControllers) {
+            enemyController.draw(backBufferGraphic);
+        }
 
         g.drawImage(backBufferImage, 0, 0, null);
     }
