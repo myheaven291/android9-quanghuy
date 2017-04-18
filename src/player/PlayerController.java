@@ -3,11 +3,7 @@ package player;
 import models.GameRect;
 import utils.Utils;
 import views.ImageRenderer;
-
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -30,6 +26,10 @@ public class PlayerController {
         this.shootEnable = true;
 
         playerBullets = new ArrayList<>();
+    }
+
+    public ArrayList<PlayerBullet> getPlayerBullets() {
+        return playerBullets;
     }
 
     public GameRect getGameRect() {

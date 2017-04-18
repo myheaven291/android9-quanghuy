@@ -1,4 +1,5 @@
 import enemies.*;
+import player.PlayerBullet;
 import player.PlayerController;
 import utils.Utils;
 
@@ -22,9 +23,12 @@ public class GameWindow extends Frame {
     boolean isLeftPressed;
     boolean isRightPressed;
     boolean isSpacePressed;
+    boolean shootEnableEnemy = true;
+    int cdTime;
 
     PlayerController playerController;
     ArrayList<EnemyController> enemyControllers;
+    ArrayList<EnemyBullet> enemyBullets;
     UfoControl ufoControl;
 
     public GameWindow() {
@@ -32,6 +36,7 @@ public class GameWindow extends Frame {
         setSize(800, 600);
         setTitle("Game 1945");
         enemyControllers = new ArrayList<>();
+        enemyBullets = new ArrayList<>();
 
         playerController = new PlayerController(400 - 25, 600 - 70, Utils.loadImage("res/plane3.png"));
 
@@ -162,6 +167,45 @@ public class GameWindow extends Frame {
                         enemyController.update();
                     }
 
+                    for (EnemyBullet enemybullet : enemyBullets){
+                        enemybullet.update();
+                    }
+
+                    setShootEnableEnemy();
+
+                    //Detect collision
+                    for (int p = 0; p < playerController.getPlayerBullets().size(); p++) {
+                        for (int e = 0; e < enemyControllers.size(); e++) {
+                            int x1, x2, y1, y2, w1, w2, h1, h2;
+                            x1 = playerController.getPlayerBullets().get(p).getGameRect().getX();
+                            y1 = playerController.getPlayerBullets().get(p).getGameRect().getY();
+                            w1 = playerController.getPlayerBullets().get(p).getGameRect().getWidth();
+                            h1 = playerController.getPlayerBullets().get(p).getGameRect().getHeight();
+
+                            x2 = enemyControllers.get(e).getGameRect().getX();
+                            y2 = enemyControllers.get(e).getGameRect().getY();
+                            w2 = enemyControllers.get(e).getGameRect().getWidth();
+                            h2 = enemyControllers.get(e).getGameRect().getHeight();
+
+                            int dx, dy, dw, dh;
+                            dx = x1 - x2;
+                            if (dx < 0) {
+                                dx = dx * (-1);
+                            }
+                            dy = y1 - y2;
+                            if (dy < 0) {
+                                dy = dy * (-1);
+                            }
+                            dw = (w1 + w2) / 2;
+                            dh = (h1 + h2) / 2;
+
+                            if (dx <= dw && dy <= dh) {
+                                enemyControllers.remove(e);
+                                playerController.getPlayerBullets().remove(p);
+                            }
+                        }
+                    }
+
                     repaint();
                 }
             }
@@ -170,16 +214,38 @@ public class GameWindow extends Frame {
         thread.start();
     }
 
+    public void setShootEnableEnemy() {
+        if (shootEnableEnemy) {
+            EnemyBullet enemyBullet = null;
+            for (EnemyController enemyController : enemyControllers) {
+                enemyBullet = new EnemyBullet(enemyController.getGameRect().getX() - 2, enemyController.getGameRect().getY() + 13, Utils.loadImage("res/enemy_bullet.png"));
+                enemyBullets.add(enemyBullet);
+                shootEnableEnemy = false;
+                cdTime = 100;
+            }
+        }
+    }
+
     @Override
     public void update(Graphics g) {
         backBufferGraphic.drawImage(backgroundImage, 0, 0, 800, 600, null);
         playerController.draw(backBufferGraphic);
         ufoControl.draw(backBufferGraphic);
 
-        for (EnemyController enemyController : enemyControllers) {
-            enemyController.draw(backBufferGraphic);
-        }
+        if (!shootEnableEnemy) {
+            cdTime--;
+            if (cdTime <= 0) {
+                shootEnableEnemy = true;
+            }
 
-        g.drawImage(backBufferImage, 0, 0, null);
+            for (EnemyController enemyController : enemyControllers) {
+                enemyController.draw(backBufferGraphic);
+            }
+            for (EnemyBullet enemyBullet : enemyBullets) {
+                enemyBullet.draw(backBufferGraphic);
+            }
+
+            g.drawImage(backBufferImage, 0, 0, null);
+        }
     }
 }

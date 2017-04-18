@@ -48,7 +48,7 @@ public class GameRect {
         return height;
     }
 
-    public void move(int dx, int dy){
+    public void move(int dx, int dy) {
         this.x += dx;
         this.y += dy;
     }
