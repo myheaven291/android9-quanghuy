@@ -2,6 +2,7 @@ package game;
 
 import game.controllers.CollisionManager;
 import game.enemies.*;
+import game.player.Bonus;
 import game.player.PlayerBullet;
 import game.player.PlayerController;
 import game.utils.Utils;
@@ -40,6 +41,7 @@ public class GameWindow extends Frame {
     private ArrayList<EnemyBullet> enemyBullets;
     private ArrayList<PlayerBullet> playerBullets;
     private UfoControl ufoControl;
+    private Bonus bonus;
 
     public GameWindow() {
         setVisible(true);
@@ -51,7 +53,7 @@ public class GameWindow extends Frame {
 
         playerController = new PlayerController(400 - 25, 600 - 70, Utils.loadImage("res/plane3.png"));
         playerController.setPlayerBullets(playerBullets);
-
+        bonus = new Bonus(1000,0,35,30,Utils.loadImage("res/heart.png"));
         ufoControl = new UfoControl(-150, 150, 150, 100, Utils.loadImage("res/ufo.png"));
 
         backBufferImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_ARGB);
@@ -191,6 +193,7 @@ public class GameWindow extends Frame {
                     playerController.processInput(isUpPressed, isDownPressed, isLeftPressed, isRightPressed, isSpacePressed, isXpressed);
                     playerController.update();
                     ufoControl.update();
+                    bonus.update();
 
                     for (EnemyController enemyController : enemyControllers) {
                         enemyController.update();
@@ -227,6 +230,7 @@ public class GameWindow extends Frame {
         backBufferGraphic.drawImage(backgroundImage, 0, 0, 800, 600, null);
         playerController.draw(backBufferGraphic);
         ufoControl.draw(backBufferGraphic);
+        bonus.draw(backBufferGraphic);
 //
 //        if (!createEnemy2) {
 //            cdCreateEnemy2--;

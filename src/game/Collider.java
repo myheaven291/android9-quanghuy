@@ -8,5 +8,4 @@ import game.models.GameRect;
 public interface Collider {
     GameRect getGameRect();
     void onCollide(Collider other);
-
 }

@@ -138,5 +138,9 @@ public class PlayerController extends Controller implements Collider {
             ((EnemyController) other).getHit(damage);
             playerHP = playerHP -1;
         }
+        if(other instanceof Bonus){
+            ((Bonus)other).getHit();
+            setPlayerHP(10);
+        }
     }
 }

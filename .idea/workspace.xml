@@ -2,71 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5325654a-4262-4a99-96e6-ada4bf803796" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/Collider.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/Program.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/controllers/CollisionManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/controllers/Controller.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/EnemyBullet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/EnemyController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/MoveBehavior.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/MoveLeft.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/ToLeftBehavior.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/ToRightBehavior.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/UfoControl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/models/GameRect.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/player/PlayerBullet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/player/PlayerController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/player/PlayerRocket.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/utils/Utils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/views/ImageRenderer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/rocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/Collider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/controllers/CollisionManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/controllers/Controller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/enemies/EnemyBullet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/enemies/EnemyController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/enemies/MoveLeft.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/enemies/UfoControl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/player/PlayerBullet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/player/PlayerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/player/PlayerRocket.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/EnemyBullet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/GameWindow.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/EnemyBullet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/EnemyController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/MoveBehavior.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/ToLeftBehavior.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/ToRightBehavior.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/UfoControl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/models/GameRect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/player/PlayerBullet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/player/PlayerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/utils/Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/views/ImageRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/enemies/EnemyBullet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/enemies/EnemyController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/enemies/UfoControl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/player/PlayerBullet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/player/PlayerController.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/enemies/UfomoveBehavior.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/enemies/UfomoveBehavior.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Program.java" afterPath="$PROJECT_DIR$/src/game/Program.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/enemies/MoveBehavior.java" afterPath="$PROJECT_DIR$/src/game/enemies/MoveBehavior.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/enemies/ToLeftBehavior.java" afterPath="$PROJECT_DIR$/src/game/enemies/ToLeftBehavior.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/enemies/ToRightBehavior.java" afterPath="$PROJECT_DIR$/src/game/enemies/ToRightBehavior.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/enemies/UfomoveBehavior.java" afterPath="$PROJECT_DIR$/src/game/enemies/UfomoveBehavior.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/models/GameRect.java" afterPath="$PROJECT_DIR$/src/game/models/GameRect.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/Utils.java" afterPath="$PROJECT_DIR$/src/game/utils/Utils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/views/ImageRenderer.java" afterPath="$PROJECT_DIR$/src/game/views/ImageRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$3.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/GameWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/player/PlayerController.class" afterPath="$PROJECT_DIR$/out/production/BuiQuangHuy_1945/game/player/PlayerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Collider.java" afterPath="$PROJECT_DIR$/src/game/Collider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/GameWindow.java" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/PlayerController.java" afterPath="$PROJECT_DIR$/src/game/player/PlayerController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,69 +23,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/GameWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-              <folding>
-                <element signature="class#1787:2576" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/controllers/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/Collider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToRightBehavior.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/enemies/ToRightBehavior.java">
+      <file leaf-file-name="Program.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/Program.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoveLeft.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/enemies/MoveLeft.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding>
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plane1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/plane1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -194,7 +82,6 @@
         <option value="$PROJECT_DIR$/src/enemies/EnemyBullet.java" />
         <option value="$PROJECT_DIR$/src/player/PlayerBullet.java" />
         <option value="$PROJECT_DIR$/src/Collider.java" />
-        <option value="$PROJECT_DIR$/src/game/Collider.java" />
         <option value="$PROJECT_DIR$/src/game/Program.java" />
         <option value="$PROJECT_DIR$/src/game/controllers/CollisionManager.java" />
         <option value="$PROJECT_DIR$/src/game/enemies/EnemyController.java" />
@@ -203,9 +90,11 @@
         <option value="$PROJECT_DIR$/src/game/player/PlayerRocket.java" />
         <option value="$PROJECT_DIR$/src/game/player/PlayerBullet.java" />
         <option value="$PROJECT_DIR$/src/game/enemies/UfoControl.java" />
-        <option value="$PROJECT_DIR$/src/game/player/PlayerController.java" />
         <option value="$PROJECT_DIR$/src/game/enemies/MoveRight.java" />
         <option value="$PROJECT_DIR$/src/game/enemies/MoveLeft.java" />
+        <option value="$PROJECT_DIR$/src/game/Collider.java" />
+        <option value="$PROJECT_DIR$/src/game/player/PlayerController.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Bonus.java" />
         <option value="$PROJECT_DIR$/src/game/GameWindow.java" />
       </list>
     </option>
@@ -237,8 +126,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +155,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android9-quanghuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android9-quanghuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android9-quanghuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android9-quanghuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,7 +292,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,12 +301,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\123\Documents\android9-quanghuy\res" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\123\Documents\android9-quanghuy\res" />
       <recent name="C:\Users\123\IdeaProjects\BuiQuangHuy_1945" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\123\Documents\android9-quanghuy\res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -829,21 +762,22 @@
       <workItem from="1493136855210" duration="799000" />
       <workItem from="1493137712329" duration="22000" />
       <workItem from="1493202154356" duration="749000" />
-      <workItem from="1493235437772" duration="18789000" />
+      <workItem from="1493235437772" duration="19194000" />
+      <workItem from="1493269373458" duration="2577000" />
+      <workItem from="1493272822748" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76084000" />
+    <option name="totallyTimeSpent" value="79076000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22715405" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -867,6 +801,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22715405" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -919,19 +854,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/GameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
           <caret line="148" column="40" lean-forward="false" selection-start-line="148" selection-start-column="40" selection-end-line="148" selection-end-column="40" />
           <folding>
-            <element signature="class#1787:2576" expanded="false" />
+            <element signature="class#1911:2700" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -948,7 +876,7 @@
         <state relative-caret-position="2278">
           <caret line="134" column="33" lean-forward="true" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
           <folding>
-            <element signature="class#1787:2576" expanded="false" />
+            <element signature="class#1911:2700" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1007,17 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/power-up.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1042,27 +959,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/CollisionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/enemies/EnemyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="false" />
+            <element signature="e#865#866#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1108,14 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="138" column="35" lean-forward="true" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1215,15 +1111,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/plane1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/game/Collider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/CollisionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/enemies/ToRightBehavior.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1239,12 +1148,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/GameWindow.java">
+    <entry file="file://$PROJECT_DIR$/res/plane1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Bonus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="527">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="class#1787:2576" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1252,7 +1168,7 @@
     <entry file="file://$PROJECT_DIR$/src/game/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#478#479#0" expanded="true" />
@@ -1261,10 +1177,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Collider.java">
+    <entry file="file://$PROJECT_DIR$/src/game/player/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="848">
+          <caret line="139" column="9" lean-forward="true" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding>
+            <element signature="class#1911:2700" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
