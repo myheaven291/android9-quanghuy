@@ -1,7 +1,8 @@
 package game.enemies;
 
-import game.Collider;
+import game.controllers.Collider;
 import game.controllers.CollisionManager;
+import game.controllers.ControllManager;
 import game.controllers.Controller;
 import game.models.GameRect;
 import game.player.PlayerController;
@@ -15,11 +16,10 @@ import java.awt.*;
 public class EnemyBullet extends Controller implements Collider{
     private int damage = 1;
 
-    public EnemyBullet(int x, int y, Image image) {
-        gameRect = new GameRect(x, y, image.getWidth(null), image.getHeight(null));
+    public EnemyBullet(int x, int y, int w, int h, Image image) {
+        gameRect = new GameRect(x, y, w,h);
         imageRenderer = new ImageRenderer(image);
         CollisionManager.instance.add(this);
-
     }
 
     public void update() {
@@ -28,11 +28,6 @@ public class EnemyBullet extends Controller implements Collider{
 
     public void getHit(int damage){
         gameRect.setDead(true);
-        CollisionManager.instance.remove(this);
-    }
-
-    public int getDamage() {
-        return damage;
     }
 
     @Override

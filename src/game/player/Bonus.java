@@ -1,6 +1,6 @@
 package game.player;
 
-import game.Collider;
+import game.controllers.Collider;
 import game.controllers.CollisionManager;
 import game.controllers.Controller;
 import game.models.GameRect;

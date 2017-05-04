@@ -11,7 +11,6 @@ public class GameRect {
     private int width;
     private int height;
     private boolean isDead;
-    private boolean inVisible;
 
     public GameRect(int x, int y, int width, int height) {
         this.x = x;
@@ -24,14 +23,6 @@ public class GameRect {
         return isDead;
     }
 
-    public boolean isInVisible() {
-        return inVisible;
-    }
-
-    public void setInVisible(boolean inVisible) {
-        this.inVisible = inVisible;
-    }
-
     public void setDead(boolean dead) {
         isDead = dead;
     }
@@ -42,14 +33,6 @@ public class GameRect {
 
     public void setY(int y) {
         this.y = y;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 
     public int getX() {
@@ -73,7 +56,6 @@ public class GameRect {
         this.y += dy;
     }
 
-    //SS4
     public boolean intersects(GameRect other){
         Rectangle rect1 = new Rectangle(x,y,width,height);
         Rectangle rect2 = new Rectangle(other.x,other.y,other.width,other.height);

@@ -1,11 +1,14 @@
 package game.player;
 
-import game.Collider;
+import game.GameWindow;
+import game.controllers.Collider;
 import game.controllers.CollisionManager;
+import game.controllers.ControllManager;
 import game.controllers.Controller;
 import game.enemies.EnemyBullet;
 import game.enemies.EnemyController;
 import game.models.GameRect;
+import game.scenes.LoseScene;
 import game.utils.Utils;
 import game.views.ImageRenderer;
 
@@ -16,14 +19,12 @@ import java.util.ArrayList;
  * Created by Huy on 4/15/2017.
  */
 public class PlayerController extends Controller implements Collider {
-    int dx = 0;
-    int dy = 0;
     private int playerHP = 10;
     private int damage = 1;
 
-    private boolean rocketEnable = true;
+    private boolean rocketEnable;
     private boolean shootEnable = true;
-    ArrayList<PlayerBullet> playerBullets;
+    private int cdTimeShootEnable, cdRocket;
 
     public PlayerController(int x, int y, Image image) {
         imageRenderer = new ImageRenderer(image);
@@ -31,16 +32,8 @@ public class PlayerController extends Controller implements Collider {
         CollisionManager.instance.add(this);
     }
 
-    public int getPlayerHP() {
-        return playerHP;
-    }
-
     public void setPlayerHP(int playerHP) {
         this.playerHP = playerHP;
-    }
-
-    public void setPlayerBullets(ArrayList<PlayerBullet> playerBullets) {
-        this.playerBullets = playerBullets;
     }
 
     public GameRect getGameRect() {
@@ -49,16 +42,15 @@ public class PlayerController extends Controller implements Collider {
 
 
     public void getHit(int damage) {
-        gameRect.setDead(true);
+        playerHP -= damage;
+        System.out.println(playerHP);
+        if (playerHP <= 0) {
+            gameRect.setDead(true);
+        }
     }
 
     public void draw(Graphics graphics) {
-        if (gameRect.isInVisible()) return;
         imageRenderer.render(graphics, gameRect);
-
-        for (PlayerBullet playerBullet : playerBullets) {
-            playerBullet.draw(graphics);
-        }
     }
 
     public void processInput(boolean isUpPressed,
@@ -67,64 +59,52 @@ public class PlayerController extends Controller implements Collider {
                              boolean isRightPressed,
                              boolean isSpacePressed,
                              boolean isXpressed) {
-        dx = 0;
-        dy = 0;
+
         if (isUpPressed) {
-            dy -= 7;
+            gameRect.move(0, -5);
         }
         if (isDownPressed) {
-            dy += 7;
+            gameRect.move(0, 5);
         }
         if (isLeftPressed) {
-            dx -= 7;
+            gameRect.move(-5, 0);
         }
         if (isRightPressed) {
-            dx += 7;
+            gameRect.move(5, 0);
         }
         if (isSpacePressed) {
             if (shootEnable) {
                 PlayerBullet playerBullet = null;
-                playerBullet = new PlayerBullet(gameRect.getX() + 28, gameRect.getY() - 15, Utils.loadImage("res/bullet.png"));
-                playerBullets.add(playerBullet);
+                playerBullet = new PlayerBullet(gameRect.getX() + 28, gameRect.getY() - 15, 13, 33, Utils.loadImage("res/bullet.png"));
+                ControllManager.instance.add(playerBullet);
                 shootEnable = false;
-                cdTimeShootEnable = 10;
+                cdTimeShootEnable = 7;
             }
         }
         if (isXpressed) {
             if (rocketEnable) {
                 PlayerRocket playerRocket = null;
-                playerRocket = new PlayerRocket(gameRect.getX(), gameRect.getY() + 70, Utils.loadImage("res/rocket.png"));
-                playerBullets.add(playerRocket);
-                rocketEnable  = false;
+                playerRocket = new PlayerRocket(gameRect.getX(), gameRect.getY() + 70, 50, 75, Utils.loadImage("res/rocket.png"));
+                ControllManager.instance.add(playerRocket);
+                rocketEnable = false;
+                cdRocket -= 1;
+                if (cdRocket == 0) {
+                    rocketEnable = false;
+                }
             }
         }
     }
 
-    int cdTimeShootEnable,
-        cdTimeRocketEnable;
+    public int getPlayerHP() {
+        return playerHP;
+    }
 
     public void update() {
-        System.out.println(playerHP);
-        for (PlayerBullet playerBullet : playerBullets) {
-            playerBullet.update();
-        }
-        if (playerHP <= 0) {
-            System.out.println("GAME OVER");
-            gameRect.setInVisible(true);
-        }
-        gameRect.move(dx, dy);
 
         if (!shootEnable) {
             cdTimeShootEnable--;
             if (cdTimeShootEnable <= 0) {
                 shootEnable = true;
-            }
-        }
-        if(!rocketEnable){
-            cdTimeRocketEnable --;
-            if(cdTimeRocketEnable<=0){
-                rocketEnable = true;
-                cdTimeRocketEnable = 200;
             }
         }
     }
@@ -136,11 +116,15 @@ public class PlayerController extends Controller implements Collider {
         }
         if (other instanceof EnemyController) {
             ((EnemyController) other).getHit(damage);
-            playerHP = playerHP -1;
+            playerHP = playerHP - 1;
         }
-        if(other instanceof Bonus){
-            ((Bonus)other).getHit();
+        if (other instanceof Bonus) {
+            ((Bonus) other).getHit();
             setPlayerHP(10);
+        }
+        if (other instanceof Rocket) {
+            rocketEnable = true;
+            cdRocket = 3;
         }
     }
 }

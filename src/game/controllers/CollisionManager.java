@@ -1,6 +1,5 @@
 package game.controllers;
 
-import game.Collider;
 import game.models.GameRect;
 import java.util.ArrayList;
 
@@ -23,20 +22,23 @@ public class CollisionManager {
 
                 GameRect recti = ci.getGameRect();
                 GameRect rectj = cj.getGameRect();
-
                 if (recti.intersects(rectj)) {
                     ci.onCollide(cj);
                     cj.onCollide(ci);
+                    if(ci.getGameRect().isDead()) {
+                        colliders.remove(ci);
+                    }
+                    if(cj.getGameRect().isDead()){
+                        colliders.remove(cj);
+                    }
                 }
             }
         }
     }
-
     public void add(Collider collider) {
         colliders.add(collider);
     }
     public void remove(Collider collider){
-        if(collider.getGameRect().isDead());
         colliders.remove(collider);
     }
 }
