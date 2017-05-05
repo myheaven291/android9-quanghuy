@@ -1,10 +1,7 @@
 package game.player;
 
 import game.GameWindow;
-import game.controllers.Collider;
-import game.controllers.CollisionManager;
-import game.controllers.ControllManager;
-import game.controllers.Controller;
+import game.controllers.*;
 import game.enemies.EnemyBullet;
 import game.enemies.EnemyController;
 import game.models.GameRect;
@@ -21,7 +18,6 @@ import java.util.ArrayList;
 public class PlayerController extends Controller implements Collider {
     private int playerHP = 10;
     private int damage = 1;
-
     private boolean rocketEnable;
     private boolean shootEnable = true;
     private int cdTimeShootEnable, cdRocket;
@@ -74,9 +70,15 @@ public class PlayerController extends Controller implements Collider {
         }
         if (isSpacePressed) {
             if (shootEnable) {
-                PlayerBullet playerBullet = null;
-                playerBullet = new PlayerBullet(gameRect.getX() + 28, gameRect.getY() - 15, 13, 33, Utils.loadImage("res/bullet.png"));
+                PlayerBullet playerBullet = new PlayerBullet(gameRect.getX() + 22, gameRect.getY() - 15, 13, 33, Utils.loadImage("res/bullet.png"));
+                PlayerBullet playerBullet2 = new PlayerBullet(gameRect.getX() + 34, gameRect.getY() - 15, 13, 33, Utils.loadImage("res/bullet.png"));
+                PlayerBulletWA playerBulletWA = new PlayerBulletWA(gameRect.getX() - 35, gameRect.getY() - 15, 24, 24, Utils.loadImage("res/bullet-right.png"));
+                PlayerBulletWD playerBulletWD = new PlayerBulletWD(gameRect.getX() + 70, gameRect.getY() - 15, 24, 24, Utils.loadImage("res/bullet-left.png"));
+
                 ControllManager.instance.add(playerBullet);
+                ControllManager.instance.add(playerBullet2);
+                ControllManager.instance.add(playerBulletWA);
+                ControllManager.instance.add(playerBulletWD);
                 shootEnable = false;
                 cdTimeShootEnable = 7;
             }
@@ -100,7 +102,6 @@ public class PlayerController extends Controller implements Collider {
     }
 
     public void update() {
-
         if (!shootEnable) {
             cdTimeShootEnable--;
             if (cdTimeShootEnable <= 0) {

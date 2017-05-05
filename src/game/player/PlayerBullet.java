@@ -29,7 +29,7 @@ public class PlayerBullet extends Controller implements Collider {
         if(gameRect.getY()<=0){
             CollisionManager.instance.remove(this);
         }
-        gameRect.move(0, -15);
+        gameRect.move(0, -10);
     }
 
     @Override

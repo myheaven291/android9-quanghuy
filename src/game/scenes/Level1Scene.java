@@ -5,7 +5,7 @@ import game.controllers.Background;
 import game.controllers.ControllManager;
 import game.enemies.Boss;
 import game.enemies.EnemyController;
-import game.enemies.MoveBehavior;
+import game.controllers.MoveBehavior;
 import game.player.Bonus;
 import game.player.PlayerController;
 import game.player.Rocket;

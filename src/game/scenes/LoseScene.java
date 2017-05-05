@@ -10,19 +10,20 @@ import java.awt.event.KeyEvent;
  * Created by 123 on 04/05/2017.
  */
 public class LoseScene implements GameScene {
-    private Background background;
+    private Background background, background_2;
     private Image gameover;
 
     public LoseScene() {
         background = new Background(0, 0, 600, 800, Utils.loadImage("res/background1.jpg"));
+        background_2 = new Background(0, -800, 600, 800, Utils.loadImage("res/background2.jpg"));
         gameover = Utils.loadImage("res/gameover.png");
     }
 
     @Override
     public void keyPresses(KeyEvent e) {
-    if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
-        System.exit(0);
-    }
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+            System.exit(0);
+        }
     }
 
     @Override
@@ -32,11 +33,14 @@ public class LoseScene implements GameScene {
 
     @Override
     public void update() {
+        background.update();
+        background_2.update();
     }
 
     @Override
     public void draw(Graphics graphics) {
         background.draw(graphics);
-        graphics.drawImage(gameover,125,250, 400,300,null);
+        background_2.draw(graphics);
+        graphics.drawImage(gameover, 125, 250, 400, 300, null);
     }
 }

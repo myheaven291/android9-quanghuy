@@ -1,4 +1,4 @@
-package game.enemies;
+package game.controllers;
 
 import game.models.GameRect;
 

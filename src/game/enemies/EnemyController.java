@@ -1,9 +1,6 @@
 package game.enemies;
 
-import game.controllers.Collider;
-import game.controllers.CollisionManager;
-import game.controllers.ControllManager;
-import game.controllers.Controller;
+import game.controllers.*;
 import game.models.GameRect;
 import game.player.PlayerBullet;
 import game.player.PlayerController;
@@ -11,7 +8,6 @@ import game.utils.Utils;
 import game.views.ImageRenderer;
 
 import java.awt.*;
-import java.util.ArrayList;
 
 /**
  * Created by Huy on 4/15/2017.
